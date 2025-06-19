@@ -20,11 +20,11 @@ const userSchema = new mongoose.Schema({
     },
     listings: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Listing"
+        ref: "listings"
     }],
     bookings: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Booking"
+        ref: "bookings"
     }]
 }, { timestamps: true });
 
