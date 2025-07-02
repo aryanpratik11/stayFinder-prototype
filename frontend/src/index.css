@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Glow Effects */
+.glow-text {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.glow {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.glow-on-hover:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Transitions */
+.transition {
+    transition: all 0.3s ease;
+}
+
+/* Custom gradient backgrounds */
+.bg-dark-gradient {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
