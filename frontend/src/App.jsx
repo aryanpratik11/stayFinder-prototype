@@ -9,6 +9,9 @@ import Listings from './pages/Listings';
 import CreateListing from './pages/CreateListing';
 import EditListing from './pages/EditListing';
 import MyListings from './pages/MyListings';
+import CreateBooking from './pages/CreateBooking';
+import MyBookings from './pages/MyBookings';
+import BookList from './pages/BookList';
 
 function App() {
   return (
@@ -23,7 +26,10 @@ function App() {
         <Route path="/listings/create" element={<CreateListing />} />
         <Route path="/edit-listing/:id" element={<EditListing />} />
         <Route path="/my-listings" element={<MyListings />} />
-        
+        <Route path="/book/:listingId" element={<CreateBooking />} />
+        <Route path="/my-bookings" element={<MyBookings />} />
+        <Route path="/book/:id" element={<BookList />} />
+
       </Routes>
     </>
   );

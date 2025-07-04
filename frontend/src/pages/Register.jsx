@@ -1,12 +1,12 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { FaArrowLeft, FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useContext, useState } from 'react';
-import { authDataContext } from '../context/authContext';
+import { authDataContext } from '../context/authContext.jsx';
 import axios from 'axios';
 
 export default function Register() {
   const navigate = useNavigate();
-  const serverUrl = useContext(authDataContext);
+  const { serverUrl } = useContext(authDataContext);
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');

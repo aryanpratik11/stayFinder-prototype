@@ -100,3 +100,17 @@ export const deleteListing = async (req, res) => {
         res.status(500).json({ message: "Failed to delete listing" });
     }
 };
+
+
+export const getListById = async (req, res) => {
+  try {
+    const listing = await listings.findById(req.params.id).populate("host", "name email");
+    if (!listing) {
+      return res.status(404).json({ message: "Listing not found." });
+    }
+    res.status(200).json(listing);
+  } catch (error) {
+    console.error("Get listing by ID error:", error);
+    res.status(500).json({ message: "Failed to fetch listing." });
+  }
+};

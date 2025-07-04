@@ -41,6 +41,7 @@ export default function Nav() {
                   <>
                     <Link to="/profile" className="block px-4 py-2 hover:bg-gray-800">Profile</Link>
                     <Link to="/my-listings" className="block px-4 py-2 hover:bg-gray-800">My Listings</Link>
+                    <Link to="/my-bookings" className="block px-4 py-2 hover:bg-gray-800">My Bookings</Link>
                     <button
                       onClick={() => {
                         logout();
@@ -81,6 +82,7 @@ export default function Nav() {
               <Link to="/listings/create" className="block hover:text-gray-300">+ Create Listing</Link>
               <Link to="/profile" className="block hover:text-gray-300">Profile</Link>
               <Link to="/my-listings" className="block hover:text-gray-300">My Listings</Link>
+              <Link to="/my-bookings" className="block hover:text-gray-300">My Bookings</Link>
               <button
                 onClick={logout}
                 className="block w-full text-left hover:text-gray-300"

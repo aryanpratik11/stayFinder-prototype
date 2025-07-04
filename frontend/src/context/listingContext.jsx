@@ -1,4 +1,3 @@
-// src/context/listingContext.jsx
 import { createContext, useState, useContext } from "react";
 import { authDataContext } from "./authContext.jsx";
 
@@ -22,7 +21,6 @@ export const ListingProvider = ({ children }) => {
         try {
             setLoading(true);
             const res = await fetch(`${serverUrl}/api/listings`);
-            console.log("serverUrl is:", serverUrl);
             const data = await res.json();
             if (!res.ok) throw new Error(data.message || "Failed to fetch listings.");
             setListings(data);
