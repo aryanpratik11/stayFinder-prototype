@@ -2,14 +2,19 @@ import { Link } from "react-router-dom";
 import { useState, useContext } from "react";
 import { FaBars, FaTimes, FaUserCircle } from "react-icons/fa";
 import { authDataContext } from "../context/authContext";
+import { listingDataContext } from "../context/listingContext";
 
 export default function Nav() {
-  const { isAuthenticated, logout } = useContext(authDataContext);
+  const { isAuthenticated, logout, user } = useContext(authDataContext);
+  const { listings } = useContext(listingDataContext);
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+
+  // Check if user has listings to be considered a host
+  const isHost = isAuthenticated && user && listings.some(l => l.host?._id === user._id);
 
   return (
     <nav className="bg-black text-white border-b border-gray-800">
@@ -42,6 +47,11 @@ export default function Nav() {
                     <Link to="/profile" className="block px-4 py-2 hover:bg-gray-800">Profile</Link>
                     <Link to="/my-listings" className="block px-4 py-2 hover:bg-gray-800">My Listings</Link>
                     <Link to="/my-bookings" className="block px-4 py-2 hover:bg-gray-800">My Bookings</Link>
+                    {isHost && (
+                      <Link to="/bookings-info" className="block px-4 py-2 hover:bg-gray-800">
+                        Manage Booking Requests
+                      </Link>
+                    )}
                     <button
                       onClick={() => {
                         logout();
@@ -83,6 +93,11 @@ export default function Nav() {
               <Link to="/profile" className="block hover:text-gray-300">Profile</Link>
               <Link to="/my-listings" className="block hover:text-gray-300">My Listings</Link>
               <Link to="/my-bookings" className="block hover:text-gray-300">My Bookings</Link>
+              {isHost && (
+                <Link to="/bookings-info" className="block hover:text-gray-300">
+                  Manage Booking Requests
+                </Link>
+              )}
               <button
                 onClick={logout}
                 className="block w-full text-left hover:text-gray-300"

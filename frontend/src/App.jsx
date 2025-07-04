@@ -12,6 +12,7 @@ import MyListings from './pages/MyListings';
 import CreateBooking from './pages/CreateBooking';
 import MyBookings from './pages/MyBookings';
 import BookList from './pages/BookList';
+import BookingsInfo from './pages/BookingsInfo';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/book/:listingId" element={<CreateBooking />} />
         <Route path="/my-bookings" element={<MyBookings />} />
         <Route path="/book/:id" element={<BookList />} />
+        <Route path="/bookings-info" element={<BookingsInfo />} />
 
       </Routes>
     </>

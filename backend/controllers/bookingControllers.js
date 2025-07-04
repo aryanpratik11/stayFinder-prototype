@@ -96,3 +96,21 @@ export const cancelBooking = async (req, res) => {
         res.status(500).json({ message: "Failed to cancel booking." });
     }
 };
+
+
+export const getBookingsInfo = async (req, res) => {
+  try {
+    const hostId = req.user._id;
+
+    // Find bookings where host is the current user
+    const hostBookings = await bookings
+      .find({ host: hostId })
+      .populate("client", "name email")
+      .populate("listing", "title images location rent");
+
+    res.status(200).json(hostBookings);
+  } catch (error) {
+    console.error("Get host bookings error:", error);
+    res.status(500).json({ message: "Failed to fetch host bookings." });
+  }
+};
