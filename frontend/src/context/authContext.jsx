@@ -1,4 +1,3 @@
-// src/context/authContext.jsx
 import { createContext, useState } from "react";
 
 export const authDataContext = createContext();
@@ -20,15 +19,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <authDataContext.Provider
-      value={{
-        serverUrl,
-        isAuthenticated,
-        user,
-        login,
-        logout,
-      }}
-    >
+    <authDataContext.Provider value={{ serverUrl, isAuthenticated, user, login, logout }}>
       {children}
     </authDataContext.Provider>
   );

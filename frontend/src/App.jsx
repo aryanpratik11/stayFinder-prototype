@@ -5,7 +5,10 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Nav from './components/nav';
 import Profile from './pages/Profile';
-import EditProfile from './pages/EditProfile';
+import Listings from './pages/Listings';
+import CreateListing from './pages/CreateListing';
+import EditListing from './pages/EditListing';
+import MyListings from './pages/MyListings';
 
 function App() {
   return (
@@ -16,7 +19,11 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/edit-profile" element={<EditProfile />} />
+        <Route path="/listings" element={<Listings />} />
+        <Route path="/listings/create" element={<CreateListing />} />
+        <Route path="/edit-listing/:id" element={<EditListing />} />
+        <Route path="/my-listings" element={<MyListings />} />
+        
       </Routes>
     </>
   );

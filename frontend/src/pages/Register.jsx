@@ -6,7 +6,7 @@ import axios from 'axios';
 
 export default function Register() {
   const navigate = useNavigate();
-  const serverUrl = useContext(authDataContext);  // 👈 get server URL from context
+  const serverUrl = useContext(authDataContext);
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
