@@ -69,7 +69,7 @@ export default function CreateListing() {
     };
 
     return (
-        <div className="min-h-screen bg-gray-900 p-4 md:p-8">
+        <div className="min-h-screen bg-black p-4 md:p-8">
             <div className="max-w-3xl mx-auto bg-gray-800 rounded-xl shadow-lg overflow-hidden p-6 border border-gray-700">
                 <div className="mb-8">
                     <h2 className="text-2xl md:text-3xl font-bold text-white">

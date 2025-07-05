@@ -46,7 +46,7 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex bg-gray-900">
+    <div className="min-h-screen flex bg-black">
 
       {/* Form Section - Right Side */}
       <div className="w-full lg:w-1/2 flex items-center justify-center p-8">
@@ -172,8 +172,8 @@ export default function Login() {
         </div>
       </div>
 
-            {/* Image Section - Left Side */}
-      <div className="hidden lg:flex w-1/2 bg-cover bg-center relative"
+      {/* Image Section - Left Side */}
+      <div className="hidden lg:flex w-1/2 bg-cover bg-center relative opacity-50"
         style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)' }}>
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 m-auto p-10 text-center">

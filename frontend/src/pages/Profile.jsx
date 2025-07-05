@@ -33,7 +33,7 @@ export default function Profile() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-900 text-gray-200 flex items-center justify-center">
+      <div className="min-h-screen bg-black text-gray-200 flex items-center justify-center">
         <div className="animate-pulse flex flex-col items-center">
           <div className="w-20 h-20 bg-gray-700 rounded-full mb-4"></div>
           <div className="h-6 w-40 bg-gray-700 rounded mb-2"></div>
@@ -45,7 +45,7 @@ export default function Profile() {
 
   if (!profile) {
     return (
-      <div className="min-h-screen bg-gray-900 text-gray-200 flex items-center justify-center">
+      <div className="min-h-screen bg-black text-gray-200 flex items-center justify-center">
         <div className="text-center p-6 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/30">
           <h2 className="text-xl font-semibold mb-2">No profile data found</h2>
           <p className="text-gray-400 mb-4">Please login to access your profile</p>
@@ -64,7 +64,7 @@ export default function Profile() {
   const handleLogout = () => { logout(); navigate("/"); };
 
   return (
-    <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-black flex items-center justify-center p-4">
       <div className="w-full max-w-4xl flex flex-col lg:flex-row bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/30 shadow-2xl overflow-hidden">
         {/* Profile Image Section (Left) */}
         <div className="w-full lg:w-1/3 bg-gradient-to-b from-gray-800 to-gray-700 p-8 flex flex-col items-center justify-center border-b lg:border-b-0 lg:border-r border-gray-700/30">

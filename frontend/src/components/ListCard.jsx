@@ -37,7 +37,7 @@ export default function ListCard({ listing, currentUser, onDelete }) {
     const shortLocation = locationParts.join(', ');
 
     return (
-        <div className="bg-gray-800 border border-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+        <div className="bg-gray-800/50 border border-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
             {/* Image Slider Section */}
             <div className="relative h-52 w-full overflow-hidden">
                 {listing.images?.length > 0 ? (

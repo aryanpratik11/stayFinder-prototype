@@ -45,7 +45,7 @@ export default function MyListings() {
 
     if (loading) {
         return (
-            <div className="min-h-screen bg-gray-900 p-8">
+            <div className="min-h-screen bg-black p-8">
                 <div className="max-w-6xl mx-auto">
                     <div className="animate-pulse space-y-6">
                         <div className="h-8 w-64 bg-gray-800 rounded"></div>
@@ -71,7 +71,7 @@ export default function MyListings() {
     }
 
     return (
-        <div className="min-h-screen bg-gray-900 p-4 md:p-8">
+        <div className="min-h-screen bg-black p-4 md:p-8">
             <div className="max-w-6xl mx-auto">
                 <div className="flex justify-between items-center mb-8">
                     <h2 className="text-2xl md:text-3xl font-bold text-white flex items-center">

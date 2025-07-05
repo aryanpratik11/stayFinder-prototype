@@ -40,9 +40,9 @@ export default function Register() {
   };
 
   return (
-    <div className="min-h-screen flex bg-gray-900">
+    <div className="min-h-screen flex bg-black">
       {/* Image Section - Left Side */}
-      <div className="hidden lg:flex w-1/2 bg-cover bg-center relative"
+      <div className="hidden lg:flex w-1/2 bg-cover bg-center relative opacity-50"
         style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)' }}>
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 m-auto p-10 text-center">
