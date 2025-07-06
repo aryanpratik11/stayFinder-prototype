@@ -14,7 +14,7 @@ export default function SecNav() {
                     <LiaHotelSolid className="w-6 h-6 mb-1" />
                     <span className="text-sm">Hotels</span>
                 </Link>
-                <Link to="/listings?category=Apartment" className="flex flex-col items-center justify-center px-3 py-2 rounded hover:bg-gray-700 hover:text-pink-400 transition whitespace-nowrap">
+                <Link to="/listings?category=Apartments" className="flex flex-col items-center justify-center px-3 py-2 rounded hover:bg-gray-700 hover:text-pink-400 transition whitespace-nowrap">
                     <PiBuildingApartment className="w-6 h-6 mb-1" />
                     <span className="text-sm">Apartments</span>
                 </Link>
