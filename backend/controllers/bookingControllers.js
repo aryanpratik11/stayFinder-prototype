@@ -102,7 +102,6 @@ export const getBookingsInfo = async (req, res) => {
   try {
     const hostId = req.user._id;
 
-    // Find bookings where host is the current user
     const hostBookings = await bookings
       .find({ host: hostId })
       .populate("client", "name email")
