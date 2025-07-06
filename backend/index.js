@@ -1,5 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
+dotenv.config();
+
 import connectDB from "./config/db.js";
 import authRouter from "./routes/authRouters.js";
 import cookieParser from "cookie-parser";
@@ -14,8 +16,6 @@ app.use(cors({
     origin: "https://stayfinder-prototype.onrender.com",
     credentials: true
 }));
-
-dotenv.config();
 
 let port = process.env.port;
 
