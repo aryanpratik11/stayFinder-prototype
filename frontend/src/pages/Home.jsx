@@ -45,7 +45,7 @@ export default function Home() {
                         <span className="text-white">.</span>
                     </h1>
                     <p className="text-xl md:text-2xl max-w-2xl mb-10 text-gray-300">
-                        Light up your journey with standout stays.
+                        Discover minimalist black homes with crystal accents that glow in the dark
                     </p>
                     <div className="flex space-x-4">
                         <Link
