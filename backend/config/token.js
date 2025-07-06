@@ -9,5 +9,4 @@ const tokenGen = async (userId) => {
     }
 }
 
-
 export default tokenGen;

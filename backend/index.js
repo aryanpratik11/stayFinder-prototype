@@ -11,7 +11,7 @@ import bookingRouter from "./routes/bookingRouters.js";
 let app = express();
 
 app.use(cors({
-    origin: "https://stayfinder-prototype.onrender.com",
+    origin: "http://localhost:5173",
     credentials: true
 }));
 
@@ -31,4 +31,3 @@ app.listen(port, () => {
     connectDB();
     console.log(`Server running at ${port}`);
 });
-
