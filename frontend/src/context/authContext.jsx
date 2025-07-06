@@ -6,7 +6,7 @@ export const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [user, setUser] = useState(null);
 
-  const serverUrl = "http://localhost:5000";
+  const serverUrl = "https://stayfinder-prototype-backend.onrender.com";
 
   const login = (userData) => {
     setIsAuthenticated(true);

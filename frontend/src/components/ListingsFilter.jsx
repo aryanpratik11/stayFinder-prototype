@@ -30,7 +30,7 @@ export default function ListingsFilter({ onFilter }) {
               className="w-full pl-3 pr-8 py-2 bg-gray-900 border border-gray-700 rounded-lg appearance-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
             >
               <option value="">All Categories</option>
-              <option value="Apartments">Apartment</option>
+              <option value="Apartment">Apartment</option>
               <option value="House">House</option>
               <option value="Villa">Villa</option>
               <option value="Hotels">Hotels</option>
