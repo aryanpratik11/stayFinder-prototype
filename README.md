@@ -1,12 +1,12 @@
 # StayFinder
 
-• A modern accommodation booking platform inspired by Airbnb, allowing users to browse, book, and manage stays seamlessly. Integrated secure authentication and authorization for users and hosts. Supports property listing management and booking flow with real-time updates.
+A modern accommodation booking platform inspired by Airbnb, allowing users to browse, book, and manage stays seamlessly. Integrated secure authentication and authorization for users and hosts. Supports property listing management and booking flow with real-time updates.
 
 ---
 
 ## Deployment
 
-**Frontend**: [[https://stayfinder-frontend.netlify.app](https://stayfinder-prototype.onrender.com)]
+**Frontend**: [https://stayfinder-prototype.onrender.com](https://stayfinder-prototype.onrender.com)]
 
 **Backend**: hosted on Render
 
